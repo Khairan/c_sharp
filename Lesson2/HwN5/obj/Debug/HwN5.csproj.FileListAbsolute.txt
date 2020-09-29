@@ -1,0 +1,11 @@
+D:\Документы\Game Dev\GeekBrains\C#\Lesson2\ConsoleAppLesson2\HwN5\bin\Debug\HwN5.exe.config
+D:\Документы\Game Dev\GeekBrains\C#\Lesson2\ConsoleAppLesson2\HwN5\bin\Debug\HwN5.exe
+D:\Документы\Game Dev\GeekBrains\C#\Lesson2\ConsoleAppLesson2\HwN5\bin\Debug\HwN5.pdb
+D:\Документы\Game Dev\GeekBrains\C#\Lesson2\ConsoleAppLesson2\HwN5\bin\Debug\HwN1.exe
+D:\Документы\Game Dev\GeekBrains\C#\Lesson2\ConsoleAppLesson2\HwN5\bin\Debug\HwN1.pdb
+D:\Документы\Game Dev\GeekBrains\C#\Lesson2\ConsoleAppLesson2\HwN5\bin\Debug\HwN1.exe.config
+D:\Документы\Game Dev\GeekBrains\C#\Lesson2\ConsoleAppLesson2\HwN5\obj\Debug\HwN5.csproj.CoreCompileInputs.cache
+D:\Документы\Game Dev\GeekBrains\C#\Lesson2\ConsoleAppLesson2\HwN5\obj\Debug\HwN5.csproj.CopyComplete
+D:\Документы\Game Dev\GeekBrains\C#\Lesson2\ConsoleAppLesson2\HwN5\obj\Debug\HwN5.exe
+D:\Документы\Game Dev\GeekBrains\C#\Lesson2\ConsoleAppLesson2\HwN5\obj\Debug\HwN5.pdb
+D:\Документы\Game Dev\GeekBrains\C#\Lesson2\ConsoleAppLesson2\HwN5\obj\Debug\HwN5.csprojAssemblyReference.cache
