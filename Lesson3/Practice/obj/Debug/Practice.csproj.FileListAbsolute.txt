@@ -1,0 +1,7 @@
+D:\Документы\Game Dev\GeekBrains\C#\Lesson3\ConsoleAppLesson3\Practice\bin\Debug\Practice.exe.config
+D:\Документы\Game Dev\GeekBrains\C#\Lesson3\ConsoleAppLesson3\Practice\bin\Debug\Practice.exe
+D:\Документы\Game Dev\GeekBrains\C#\Lesson3\ConsoleAppLesson3\Practice\bin\Debug\Practice.pdb
+D:\Документы\Game Dev\GeekBrains\C#\Lesson3\ConsoleAppLesson3\Practice\obj\Debug\Practice.csprojAssemblyReference.cache
+D:\Документы\Game Dev\GeekBrains\C#\Lesson3\ConsoleAppLesson3\Practice\obj\Debug\Practice.csproj.CoreCompileInputs.cache
+D:\Документы\Game Dev\GeekBrains\C#\Lesson3\ConsoleAppLesson3\Practice\obj\Debug\Practice.exe
+D:\Документы\Game Dev\GeekBrains\C#\Lesson3\ConsoleAppLesson3\Practice\obj\Debug\Practice.pdb
