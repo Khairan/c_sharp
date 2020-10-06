@@ -1,0 +1,7 @@
+D:\Документы\Game Dev\GeekBrains\C#\Lesson4\ConsoleAppLesson4\HwN3\bin\Debug\HwN3.exe.config
+D:\Документы\Game Dev\GeekBrains\C#\Lesson4\ConsoleAppLesson4\HwN3\bin\Debug\HwN3.exe
+D:\Документы\Game Dev\GeekBrains\C#\Lesson4\ConsoleAppLesson4\HwN3\bin\Debug\HwN3.pdb
+D:\Документы\Game Dev\GeekBrains\C#\Lesson4\ConsoleAppLesson4\HwN3\obj\Debug\HwN3.csprojAssemblyReference.cache
+D:\Документы\Game Dev\GeekBrains\C#\Lesson4\ConsoleAppLesson4\HwN3\obj\Debug\HwN3.csproj.CoreCompileInputs.cache
+D:\Документы\Game Dev\GeekBrains\C#\Lesson4\ConsoleAppLesson4\HwN3\obj\Debug\HwN3.exe
+D:\Документы\Game Dev\GeekBrains\C#\Lesson4\ConsoleAppLesson4\HwN3\obj\Debug\HwN3.pdb
