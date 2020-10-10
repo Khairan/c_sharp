@@ -46,15 +46,45 @@ namespace HwN2
         /// <returns></returns>
         public static string DeleteWords(string msg, char endchar)
         {
+            string newmsg = msg;
             string[] parts = msg.Split(' ');
             foreach (string part in parts)
             {
-                if (part.EndsWith(endchar.ToString())) msg.Replace(part, "");
-                
+                if (part.EndsWith(endchar.ToString())) newmsg = newmsg.Replace(part, "");                
             }            
             
-            return msg;
-        } 
+            return newmsg;
+        }
+
+        /// <summary>
+        /// Находит самое длинное слово сообщения
+        /// </summary>
+        /// <param name="msg"></param>
+        /// <returns></returns>
+        public static string LongestWord(string msg)
+        {   
+            string longestWord = string.Empty;
+            string[] parts = msg.Split(' ');
+            foreach (string part in parts)
+            {
+                if (part.Length > longestWord.Length) longestWord = part;
+            }
+
+            return longestWord;
+        }
+
+        public static StringBuilder NewString(string msg)
+        {
+            int longestLength = LongestWord(msg).Length;
+            StringBuilder longestWords = new StringBuilder();
+            string[] parts = msg.Split(' ');
+            foreach (string part in parts)
+            {
+                if (part.Length >= longestLength) longestWords.Append($"{part} ");
+            }
+
+            return longestWords; 
+        }
     }
 
     class Program
@@ -65,6 +95,8 @@ namespace HwN2
             string msg = ParamRequest("текст сообщения");
             Console.WriteLine(Message.PrintWordsN(msg, 5));
             Console.WriteLine(Message.DeleteWords(msg, 's'));
+            Console.WriteLine(Message.LongestWord(msg));
+            Console.WriteLine(Message.NewString(msg));
 
             Console.ReadKey();
         }
