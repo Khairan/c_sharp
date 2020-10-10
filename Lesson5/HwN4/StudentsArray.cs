@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
 //Глотов Андрей
 //№4
@@ -20,29 +17,57 @@ using System.Threading.Tasks;
 
 namespace HwN4
 {
-
-    class Program
+    class StudentsArray
     {
-        static void Main(string[] args)
+        Student[] array;
+
+        public StudentsArray(int n)
         {
-
-            var appArray = new StudentsArray(@"D:\Документы\Game Dev\GeekBrains\C#\Lesson5\ConsoleAppLesson5\apprentices.txt");
-            var worstStudents = new StudentsArray(3);
-            for (int i = 0; i < appArray.GetLength(); i++)
-            {
-                appArray[i].Print();                
-            }
-
-            Console.WriteLine("\nХудшие ученики: ");
-            appArray.BubbleSort();
-            double badScore = appArray[2].Score;
-            for (int i = 0; i < appArray.GetLength(); i++)
-            {
-                if (appArray[i].Score <= badScore) appArray[i].Print();
-            }
-
-            Console.ReadKey();
-
+            array = new Student[n];
         }
+
+        public StudentsArray(string filename)
+        {
+            if (File.Exists(filename))
+            {
+                StreamReader sr = new StreamReader(filename);
+                //  Считываем количество учеников
+                int n = int.Parse(sr.ReadLine());
+                array = new Student[n];
+                //  Считываем массив
+                for (int i = 0; i < n; i++)
+                {
+                    array[i] = new Student(sr.ReadLine());
+                }
+                sr.Close();                
+            }
+            else Console.WriteLine("Error load file");
+        }
+
+        public int GetLength()
+        {
+            return array.Length;
+        }
+
+        public void BubbleSort()
+        {
+            //  Сортируем методом пузырька
+            for (int i = 0; i < array.Length; i++)
+                for (int j = 0; j < array.Length - 1; j++)
+                    if (array[j].Score > array[j + 1].Score)//Сравниваем соседние элементы
+                    {
+                        //  Обмениваем элементы местами
+                        var t = array[j];
+                        array[j] = array[j + 1];
+                        array[j + 1] = t;
+                    }
+        }
+
+        public Student this[int i]
+        {
+            get { return array[i]; }
+            set { array[i] = value; }
+        }
+
     }
 }

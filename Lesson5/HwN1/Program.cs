@@ -49,7 +49,7 @@ namespace HwN1
             Console.WriteLine($"\n{(f ? "Ве" : "Неве")}рный формат логина");
 
             //с использованием регулярных выражений
-            Regex myReg = new Regex(@"[A-Za-z]+[A-Za-z0-9]{1,9}");
+            Regex myReg = new Regex(@"[A-Za-z][\w]{1,9}$");
             f = myReg.IsMatch(userLogin);
             
             Console.WriteLine($"\n{(f ? "Ве" : "Неве")}рный формат логина");

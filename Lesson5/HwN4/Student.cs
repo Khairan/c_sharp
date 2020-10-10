@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 //Глотов Андрей
 //№4
@@ -20,29 +16,83 @@ using System.Threading.Tasks;
 
 namespace HwN4
 {
-
-    class Program
+    class Student
     {
-        static void Main(string[] args)
+        string name;
+        string surname;
+        int[] grades;
+        double score;
+
+        public Student()
         {
-
-            var appArray = new StudentsArray(@"D:\Документы\Game Dev\GeekBrains\C#\Lesson5\ConsoleAppLesson5\apprentices.txt");
-            var worstStudents = new StudentsArray(3);
-            for (int i = 0; i < appArray.GetLength(); i++)
-            {
-                appArray[i].Print();                
-            }
-
-            Console.WriteLine("\nХудшие ученики: ");
-            appArray.BubbleSort();
-            double badScore = appArray[2].Score;
-            for (int i = 0; i < appArray.GetLength(); i++)
-            {
-                if (appArray[i].Score <= badScore) appArray[i].Print();
-            }
-
-            Console.ReadKey();
-
+            name = string.Empty;
+            surname = string.Empty;
+            grades = new int[0];
+            score = 0;
         }
+
+        public Student(string name, string surname, int[] grades)
+        {
+            this.name = name;
+            this.surname = surname;
+            this.grades = grades;
+            score = this.AverageScore();
+        }
+
+        public Student(string msg)
+        {
+            string[] parts = msg.Split(' ');
+            this.name = parts[0];
+            this.surname = parts[1];
+            grades = new int[parts.Length - 2];
+
+            for (int i = 2; i < parts.Length; i++)
+            {
+                grades[i - 2] = int.Parse(parts[i]);
+            }
+
+            score = this.AverageScore();
+
+        }        
+
+        public void Print()
+        {
+            Console.WriteLine($"{name} {surname} {String.Join(" ", grades)} Средний балл: {score}");
+        }
+
+        double AverageScore()
+        {
+            int sum = 0;
+            foreach (int g in grades)
+            {
+                sum += g;    
+            }
+            return Math.Round((double)sum / grades.Length,2);
+        }
+
+        public double Score
+        {
+            get { return score; }
+            set { score = value; }
+        }
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public string Surname
+        {
+            get { return surname; }
+            set { surname = value; }
+        }
+
+        public int[] Grades
+        {
+            get { return grades; }
+            set { grades = value; }
+        }       
+
     }
 }

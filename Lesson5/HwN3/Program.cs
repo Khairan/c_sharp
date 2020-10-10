@@ -11,8 +11,7 @@ using System.Threading.Tasks;
 //badc являются перестановкой abcd.
 
 namespace HwN3
-{
-    
+{    
 
     class Program
     {
