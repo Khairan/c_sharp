@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using static HwN1.Program;
 
@@ -18,74 +17,6 @@ using static HwN1.Program;
 
 namespace HwN2
 {
-    static class Message
-    {
-
-        /// <summary>
-        /// Выводит только те слова сообщения, которые содержат не более n букв
-        /// </summary>
-        /// <param name="msg"></param>
-        /// <param name="n"></param>
-        /// <returns></returns>
-        public static string PrintWordsN(string msg, int n)
-        {
-            string newmsg = string.Empty;
-            string[] parts = msg.Split(' ');
-            foreach (string part in parts)
-            {
-                if (part.Length == n) newmsg += $"{part} ";
-            }
-            return newmsg;
-        }
-
-        /// <summary>
-        /// Удаляет из сообщения все слова, которые заканчиваются на заданный символ
-        /// </summary>
-        /// <param name="msg"></param>
-        /// <param name="c"></param>
-        /// <returns></returns>
-        public static string DeleteWords(string msg, char endchar)
-        {
-            string newmsg = msg;
-            string[] parts = msg.Split(' ');
-            foreach (string part in parts)
-            {
-                if (part.EndsWith(endchar.ToString())) newmsg = newmsg.Replace(part, "");                
-            }            
-            
-            return newmsg;
-        }
-
-        /// <summary>
-        /// Находит самое длинное слово сообщения
-        /// </summary>
-        /// <param name="msg"></param>
-        /// <returns></returns>
-        public static string LongestWord(string msg)
-        {   
-            string longestWord = string.Empty;
-            string[] parts = msg.Split(' ');
-            foreach (string part in parts)
-            {
-                if (part.Length > longestWord.Length) longestWord = part;
-            }
-
-            return longestWord;
-        }
-
-        public static StringBuilder NewString(string msg)
-        {
-            int longestLength = LongestWord(msg).Length;
-            StringBuilder longestWords = new StringBuilder();
-            string[] parts = msg.Split(' ');
-            foreach (string part in parts)
-            {
-                if (part.Length >= longestLength) longestWords.Append($"{part} ");
-            }
-
-            return longestWords; 
-        }
-    }
 
     class Program
     {

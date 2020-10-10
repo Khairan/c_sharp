@@ -1,0 +1,89 @@
+﻿using System.Text;
+
+//Глотов Андрей
+//№2
+//Разработать статический класс Message, содержащий следующие статические методы для обработки текста:
+//а) Вывести только те слова сообщения, которые содержат не более n букв.
+//б) Удалить из сообщения все слова, которые заканчиваются на заданный символ.
+//в) Найти самое длинное слово сообщения.
+//г) Сформировать строку с помощью StringBuilder из самых длинных слов сообщения.
+//д) ***Создать метод, который производит частотный анализ текста. В качестве параметра в него передается массив слов и текст,
+// в качестве результата метод возвращает сколько раз каждое из слов массива входит в этот текст.
+// Здесь требуется использовать класс Dictionary.
+
+namespace HwN2
+{
+    static class Message
+    {
+
+        /// <summary>
+        /// Выводит только те слова сообщения, которые содержат не более n букв
+        /// </summary>
+        /// <param name="msg"></param>
+        /// <param name="n"></param>
+        /// <returns></returns>
+        public static string PrintWordsN(string msg, int n)
+        {
+            string newmsg = string.Empty;
+            string[] parts = msg.Split(' ');
+            foreach (string part in parts)
+            {
+                if (part.Length == n) newmsg += $"{part} ";
+            }
+            return newmsg;
+        }
+
+        /// <summary>
+        /// Удаляет из сообщения все слова, которые заканчиваются на заданный символ
+        /// </summary>
+        /// <param name="msg"></param>
+        /// <param name="c"></param>
+        /// <returns></returns>
+        public static string DeleteWords(string msg, char endchar)
+        {
+            string newmsg = msg;
+            string[] parts = msg.Split(' ');
+            foreach (string part in parts)
+            {
+                if (part.EndsWith(endchar.ToString())) newmsg = newmsg.Replace(part, "");                
+            }            
+            
+            return newmsg;
+        }
+
+        /// <summary>
+        /// Находит самое длинное слово сообщения
+        /// </summary>
+        /// <param name="msg"></param>
+        /// <returns></returns>
+        public static string LongestWord(string msg)
+        {   
+            string longestWord = string.Empty;
+            string[] parts = msg.Split(' ');
+            foreach (string part in parts)
+            {
+                if (part.Length > longestWord.Length) longestWord = part;
+            }
+
+            return longestWord;
+        }
+
+        /// <summary>
+        /// Формирует строку с помощью StringBuilder из самых длинных слов сообщения
+        /// </summary>
+        /// <param name="msg"></param>
+        /// <returns></returns>
+        public static StringBuilder NewString(string msg)
+        {
+            int longestLength = LongestWord(msg).Length;
+            StringBuilder longestWords = new StringBuilder();
+            string[] parts = msg.Split(' ');
+            foreach (string part in parts)
+            {
+                if (part.Length >= longestLength) longestWords.Append($"{part} ");
+            }
+
+            return longestWords; 
+        }
+    }
+}
