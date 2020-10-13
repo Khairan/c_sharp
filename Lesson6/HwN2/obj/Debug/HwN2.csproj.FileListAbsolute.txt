@@ -1,0 +1,6 @@
+D:\Документы\Game Dev\GeekBrains\C#\Lesson6\ConsoleAppLesson6\HwN2\bin\Debug\HwN2.exe.config
+D:\Документы\Game Dev\GeekBrains\C#\Lesson6\ConsoleAppLesson6\HwN2\bin\Debug\HwN2.exe
+D:\Документы\Game Dev\GeekBrains\C#\Lesson6\ConsoleAppLesson6\HwN2\bin\Debug\HwN2.pdb
+D:\Документы\Game Dev\GeekBrains\C#\Lesson6\ConsoleAppLesson6\HwN2\obj\Debug\HwN2.csproj.CoreCompileInputs.cache
+D:\Документы\Game Dev\GeekBrains\C#\Lesson6\ConsoleAppLesson6\HwN2\obj\Debug\HwN2.exe
+D:\Документы\Game Dev\GeekBrains\C#\Lesson6\ConsoleAppLesson6\HwN2\obj\Debug\HwN2.pdb
