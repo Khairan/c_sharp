@@ -30,6 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.userNumber = new System.Windows.Forms.TextBox();
+            this.textMessage = new System.Windows.Forms.Label();
+            this.countsText = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -51,11 +53,34 @@
             this.userNumber.TabIndex = 2;
             this.userNumber.KeyDown += new System.Windows.Forms.KeyEventHandler(this.userNumber_KeyDown);
             // 
+            // textMessage
+            // 
+            this.textMessage.AutoSize = true;
+            this.textMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textMessage.Location = new System.Drawing.Point(45, 117);
+            this.textMessage.Name = "textMessage";
+            this.textMessage.Size = new System.Drawing.Size(19, 25);
+            this.textMessage.TabIndex = 3;
+            this.textMessage.Text = "-";
+            this.textMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // countsText
+            // 
+            this.countsText.AutoSize = true;
+            this.countsText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.countsText.Location = new System.Drawing.Point(47, 167);
+            this.countsText.Name = "countsText";
+            this.countsText.Size = new System.Drawing.Size(23, 25);
+            this.countsText.TabIndex = 4;
+            this.countsText.Text = "0";
+            // 
             // FormGuessNumber
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(412, 239);
+            this.Controls.Add(this.countsText);
+            this.Controls.Add(this.textMessage);
             this.Controls.Add(this.userNumber);
             this.Controls.Add(this.label1);
             this.Name = "FormGuessNumber";
@@ -69,6 +94,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox userNumber;
+        private System.Windows.Forms.Label textMessage;
+        private System.Windows.Forms.Label countsText;
     }
 }
 

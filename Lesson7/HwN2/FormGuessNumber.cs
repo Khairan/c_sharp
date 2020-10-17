@@ -18,7 +18,7 @@ namespace HwN2
 {
     public partial class FormGuessNumber : Form
     {
-        public int guessedNumber;
+        public int guessedNumber, counts = 5;
 
         public FormGuessNumber()
         {
@@ -26,18 +26,26 @@ namespace HwN2
             this.Text = "Угадай число";
             var rnd = new Random();
             guessedNumber = rnd.Next(1, 100);
+            countsText.Text = $"Осталось попыток: {counts.ToString()}";
         }
 
         private void userNumber_KeyDown(object sender, KeyEventArgs e)
-        {
+       {
             if (e.KeyCode == Keys.Enter)
             {
-                int number = int.Parse(userNumber.Text);
-                if (number == guessedNumber) { MessageBox.Show("Поздравляю, вы отгадали!"); Close(); }
-                else if (number > guessedNumber) MessageBox.Show("Слишком большое число");
-                else MessageBox.Show("Слишком маленькое число");
+                if (counts > 1)
+                {
+                    int number = int.Parse(userNumber.Text);
+                    if (number == guessedNumber) { MessageBox.Show("Поздравляю, вы отгадали!"); Close(); }
+                    else if (number > guessedNumber) textMessage.Text = "Слишком большое число";
+                    else textMessage.Text = "Слишком маленькое число";
+                    counts--;
+                    countsText.Text = $"Осталось попыток: {counts.ToString()}";
+                }
+                else { MessageBox.Show("Вы проиграли :("); Close(); }
+
             }
         }
-               
+
     }
 }
