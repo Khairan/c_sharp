@@ -1,0 +1,10 @@
+D:\Документы\Game Dev\GeekBrains\C#\Lesson7\WindowsFormsLesson7\HwN1\bin\Debug\HwN1.exe.config
+D:\Документы\Game Dev\GeekBrains\C#\Lesson7\WindowsFormsLesson7\HwN1\bin\Debug\HwN1.exe
+D:\Документы\Game Dev\GeekBrains\C#\Lesson7\WindowsFormsLesson7\HwN1\bin\Debug\HwN1.pdb
+D:\Документы\Game Dev\GeekBrains\C#\Lesson7\WindowsFormsLesson7\HwN1\obj\Debug\HwN1.Properties.Resources.resources
+D:\Документы\Game Dev\GeekBrains\C#\Lesson7\WindowsFormsLesson7\HwN1\obj\Debug\HwN1.csproj.GenerateResource.cache
+D:\Документы\Game Dev\GeekBrains\C#\Lesson7\WindowsFormsLesson7\HwN1\obj\Debug\HwN1.csproj.CoreCompileInputs.cache
+D:\Документы\Game Dev\GeekBrains\C#\Lesson7\WindowsFormsLesson7\HwN1\obj\Debug\HwN1.exe
+D:\Документы\Game Dev\GeekBrains\C#\Lesson7\WindowsFormsLesson7\HwN1\obj\Debug\HwN1.pdb
+D:\Документы\Game Dev\GeekBrains\C#\Lesson7\WindowsFormsLesson7\HwN1\obj\Debug\HwN1.csprojAssemblyReference.cache
+D:\Документы\Game Dev\GeekBrains\C#\Lesson7\WindowsFormsLesson7\HwN1\obj\Debug\HwN1.FormMultiplier.resources
