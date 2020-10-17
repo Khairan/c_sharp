@@ -7,3 +7,4 @@ D:\Документы\Game Dev\GeekBrains\C#\Lesson7\WindowsFormsLesson7\HwN2\ob
 D:\Документы\Game Dev\GeekBrains\C#\Lesson7\WindowsFormsLesson7\HwN2\obj\Debug\HwN2.csproj.CoreCompileInputs.cache
 D:\Документы\Game Dev\GeekBrains\C#\Lesson7\WindowsFormsLesson7\HwN2\obj\Debug\HwN2.exe
 D:\Документы\Game Dev\GeekBrains\C#\Lesson7\WindowsFormsLesson7\HwN2\obj\Debug\HwN2.pdb
+D:\Документы\Game Dev\GeekBrains\C#\Lesson7\WindowsFormsLesson7\HwN2\obj\Debug\HwN2.csprojAssemblyReference.cache

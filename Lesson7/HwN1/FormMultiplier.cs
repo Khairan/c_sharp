@@ -20,6 +20,7 @@ namespace HwN1
     public partial class FormMultiplier : System.Windows.Forms.Form
     {
         public int guessnumber;
+        public Stack<string> stack = new Stack<string>();
 
         public FormMultiplier()
         {
@@ -30,32 +31,36 @@ namespace HwN1
             lblNumber.Text = "0";
             this.Text = "Удвоитель";
             commandNumber.Text = "0";
-            guessNumber.Text = "Число 0";
+            guessNumber.Text = "Число 0";            
                         
         }
 
         private void IncreaseCommandNumber()
         {
             commandNumber.Text = (int.Parse(commandNumber.Text) + 1).ToString();
-            if (guessnumber == int.Parse(lblNumber.Text)) MessageBox.Show($"Вы достигли числа за {commandNumber.Text} ходов");
+            if (guessnumber > 0 && guessnumber == int.Parse(lblNumber.Text)) MessageBox.Show($"Вы достигли числа за {commandNumber.Text} ходов");
         }
 
         private void btnCommand1_Click(object sender, EventArgs e)
         {
+            stack.Push(lblNumber.Text);
             lblNumber.Text = (int.Parse(lblNumber.Text) + 1).ToString();
-            IncreaseCommandNumber();
+            IncreaseCommandNumber();            
         }      
 
         private void btnCommand2_Click(object sender, EventArgs e)
         {
+            stack.Push(lblNumber.Text);
             lblNumber.Text = (int.Parse(lblNumber.Text) * 2).ToString();
-            IncreaseCommandNumber();
+            IncreaseCommandNumber();            
         }
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            lblNumber.Text = "1";
-            IncreaseCommandNumber();
+            lblNumber.Text = "0";
+            commandNumber.Text = "0";
+            stack.Clear();
+            //IncreaseCommandNumber();
         }
 
         private void playToolStripMenuItem_Click(object sender, EventArgs e)
@@ -63,9 +68,19 @@ namespace HwN1
             lblNumber.Text = "0";
             commandNumber.Text = "0";
             var rnd = new Random();
-            guessnumber = rnd.Next(1, 1000);
+            guessnumber = rnd.Next(100, 1000);
             MessageBox.Show($"Получите число {guessnumber} за минимальное количество ходов");
             guessNumber.Text = "Число " + guessnumber.ToString();
+            stack.Clear();
+        }
+
+        private void Cancel_Click(object sender, EventArgs e)
+        {
+            if (stack.Count > 0)
+            {
+                lblNumber.Text = stack.Pop();
+                IncreaseCommandNumber();
+            }            
         }
     }
 }

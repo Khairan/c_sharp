@@ -16,7 +16,7 @@ namespace HwN1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMultiplier());            
+            Application.Run(new FormMultiplier());
         }
     }
 }
