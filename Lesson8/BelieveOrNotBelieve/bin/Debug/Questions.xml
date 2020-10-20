@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<ArrayOfQuestion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Question>
+    <text>Самое сухое место на Земле – пустыня Сахара</text>
+    <trueFalse>false</trueFalse>
+  </Question>
+  <Question>
+    <text>Полярные медведи закрывают черный нос лапами, когда пытаются спрятаться в снегу</text>
+    <trueFalse>false</trueFalse>
+  </Question>
+  <Question>
+    <text>Человеческий мозг – розового цвета</text>
+    <trueFalse>true</trueFalse>
+  </Question>
+  <Question>
+    <text>Кобру можно загипнотизировать музыкой</text>
+    <trueFalse>false</trueFalse>
+  </Question>
+  <Question>
+    <text>Великую Китайскую стену видно с Луны</text>
+    <trueFalse>false</trueFalse>
+  </Question>
+  <Question>
+    <text>Ну это совсем просто! В ракушке мы слышим море</text>
+    <trueFalse>false</trueFalse>
+  </Question>
+  <Question>
+    <text>Электрон больше, чем атом</text>
+    <trueFalse>false</trueFalse>
+  </Question>
+  <Question>
+    <text>Глаз страуса больше, чем его мозг</text>
+    <trueFalse>true</trueFalse>
+  </Question>
+  <Question>
+    <text>Звуковые волны относятся к поперечному виду волн</text>
+    <trueFalse>false</trueFalse>
+  </Question>
+  <Question>
+    <text>Больше всего часовых поясов – во Франции</text>
+    <trueFalse>true</trueFalse>
+  </Question>
+  <Question>
+    <text>«Пупырчатую» упаковку придумали еще в Древнем Египте — ее делали из органов животных и использовали для транспортировки саркофагов</text>
+    <trueFalse>false</trueFalse>
+  </Question>
+  <Question>
+    <text>Инфракрасные лучи невидимы для человеческого глаза</text>
+    <trueFalse>true</trueFalse>
+  </Question>
+  <Question>
+    <text>Меланин — вещество, которое придает цвет коже и волосам</text>
+    <trueFalse>true</trueFalse>
+  </Question>
+</ArrayOfQuestion>

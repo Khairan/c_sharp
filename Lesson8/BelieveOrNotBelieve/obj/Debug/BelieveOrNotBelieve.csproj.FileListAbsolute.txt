@@ -1,0 +1,10 @@
+D:\Документы\Game Dev\GeekBrains\C#\Lesson8\ConsoleAppLesson8\BelieveOrNotBelieve\bin\Debug\BelieveOrNotBelieve.exe.config
+D:\Документы\Game Dev\GeekBrains\C#\Lesson8\ConsoleAppLesson8\BelieveOrNotBelieve\bin\Debug\BelieveOrNotBelieve.exe
+D:\Документы\Game Dev\GeekBrains\C#\Lesson8\ConsoleAppLesson8\BelieveOrNotBelieve\bin\Debug\BelieveOrNotBelieve.pdb
+D:\Документы\Game Dev\GeekBrains\C#\Lesson8\ConsoleAppLesson8\BelieveOrNotBelieve\obj\Debug\BelieveOrNotBelieve.csprojAssemblyReference.cache
+D:\Документы\Game Dev\GeekBrains\C#\Lesson8\ConsoleAppLesson8\BelieveOrNotBelieve\obj\Debug\BelieveOrNotBelieve.Form1.resources
+D:\Документы\Game Dev\GeekBrains\C#\Lesson8\ConsoleAppLesson8\BelieveOrNotBelieve\obj\Debug\BelieveOrNotBelieve.Properties.Resources.resources
+D:\Документы\Game Dev\GeekBrains\C#\Lesson8\ConsoleAppLesson8\BelieveOrNotBelieve\obj\Debug\BelieveOrNotBelieve.csproj.GenerateResource.cache
+D:\Документы\Game Dev\GeekBrains\C#\Lesson8\ConsoleAppLesson8\BelieveOrNotBelieve\obj\Debug\BelieveOrNotBelieve.csproj.CoreCompileInputs.cache
+D:\Документы\Game Dev\GeekBrains\C#\Lesson8\ConsoleAppLesson8\BelieveOrNotBelieve\obj\Debug\BelieveOrNotBelieve.exe
+D:\Документы\Game Dev\GeekBrains\C#\Lesson8\ConsoleAppLesson8\BelieveOrNotBelieve\obj\Debug\BelieveOrNotBelieve.pdb
